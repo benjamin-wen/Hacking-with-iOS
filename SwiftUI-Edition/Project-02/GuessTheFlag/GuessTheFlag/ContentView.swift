@@ -17,6 +17,12 @@ struct ContentView: View {
     @State private var scoreMessage = ""
     @State private var showingScore = false
     
+    // title
+    private let title = Text("Tap the flag of")
+        .font(.largeTitle)
+        .fontWeight(.black)
+        .foregroundColor(.white)
+    
     var body: some View {
         ZStack {
             // background
@@ -25,10 +31,7 @@ struct ContentView: View {
             
             VStack(spacing: 30) {
                 VStack {
-                    Text("Tap the flag of")
-                        .font(.largeTitle)
-                        .fontWeight(.black)
-                        .foregroundColor(.white)
+                    title
                     Text(countries[correctAnswer])
                         .foregroundColor(.white)
                 }
@@ -36,11 +39,7 @@ struct ContentView: View {
                     Button(action: {
                         self.flagTapped(number)
                     }) {
-                        Image(self.countries[number])
-                            .renderingMode(.original)
-                            .clipShape(Capsule())
-                            .overlay(Capsule().stroke(Color.black, lineWidth: 1))
-                            .shadow(color: .black, radius: 2)
+                        FlagImage(image: Image(self.countries[number]))
                     }
                     
                 }
