@@ -3,6 +3,11 @@
 
 Overview: https://www.hackingwithswift.com/books/ios-swiftui
 
+## Recap
+
+* `@State` property wrapper, and its super power: two-way binding.
+* `Form`, `TextField`, `Section`, `NavigationView`, `Picker`(style variants) and `ForEach` etc.
+* String interpolation with specifiers, like: `print("$\(totalPerPerson, specifier: "%.2f")")`
 
 ## Screenshots
 
