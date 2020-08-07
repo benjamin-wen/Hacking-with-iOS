@@ -1,7 +1,12 @@
-# Project 1: WeSplit
+# Project 5: WordScramble
 
 
 Overview: https://www.hackingwithswift.com/books/ios-swiftui
+
+
+## Recap
+
+* `List`
 
 
 ## Screenshots
